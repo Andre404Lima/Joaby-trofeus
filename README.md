@@ -14,7 +14,22 @@ Um sistema visual de exibição de conquistas/troféus desenvolvido com React e 
 - **React Icons** – Ícones vetoriais
 - **ESLint + Prettier** – Padronização e qualidade de código
 
+
 ---
+## 🚧 Funcionalidades em Implementação
+- [ ] Catálogo básico de troféus com cards visuais
+- [ ] Página de detalhes do troféu com imagem e descrição
+- [ ] Página de solicitação de modelos personalizados
+- [ ] Sistema de carrinho de compras (mínimo viável)
+- [ ] Página de contato com formulário e links diretos
+- [ ] Sistema de envio de pedidos personalizados
+- [ ] Painel administrativo (inserção e edição de modelos)
+- [ ] Responsividade completa para dispositivos móveis
+- [ ] Tema escuro (Dark Mode)
+- [ ] Integração com API de e-mail ou WhatsApp para pedidos
+
+
+
 
 ## 📦 Instalação
 
