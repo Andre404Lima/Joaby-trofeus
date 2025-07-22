@@ -1,0 +1,107 @@
+@import "./styles/slider.css";
+@import "./styles/spinner.css";
+@import "./styles/cards.css";
+
+@import "./styles/overrides/layout.css";
+
+:root {
+	--colorPrimary: hsl(0.39deg 100% 30%);
+	--colorPrimaryHover: hsl(356.34deg 36.61% 56.08%);
+	--colorTextBase: white;
+	--colorPrimaryTransparent: rgb(153, 1, 0, 0.2);
+	--colorPrimaryTransparentHover: rgb(153, 1, 0, 0.8);
+	color: var(--colorTextBase);
+	background-color: var(--colorPrimary);
+	background: var(--colorPrimary);
+}
+
+header {
+	font-size: 32px;
+	background-color: var(--colorPrimary);
+	border-bottom: 3px solid white;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	margin-bottom: 10px;
+
+	.logo {
+		size: 42;
+		color: var(--colorTextBase);
+		font-style: italic;
+		margin: 0px 40px;
+	}
+	.header-button {
+		cursor: pointer;
+		font-size: 24;
+		color: var(--colorTextBase);
+		text-transform: uppercase;
+		background-color: var(--colorPrimary);
+		border: 3px solid var(--colorTextBase);
+		border-radius: 20px;
+		margin: 0px 15px;
+		padding: 10px;
+		&:active {
+			background-color: var(--colorPrimary-hover);
+			transform: scale(0.98);
+		}
+		&:hover {
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+		}
+		&.active {
+			background-color: var(--colorPrimaryHover);
+		}
+		&.profile {
+			padding: 3px 10px;
+		}
+		&:last-child {
+			margin-left: auto;
+			margin-right: 40px;
+		}
+	}
+	img.profile-image {
+		display: flex;
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		border: 2px solid var(--colorTextBase);
+		object-fit: cover;
+	}
+}
+
+body {
+	font-size: 14;
+	font-family: "Roboto", Arial, sans-serif;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	background-color: var(--colorPrimary);
+	height: 100%;
+}
+
+footer {
+	padding-top: 20px;
+	position: relative;
+	width: 100%;
+}
+
+.container {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+	width: 100%;
+}
+
+.main-content {
+	flex: 1;
+	min-width: 800px;
+	width: 1200px;
+	max-width: 1200px;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+	min-height: 90vh;
+}

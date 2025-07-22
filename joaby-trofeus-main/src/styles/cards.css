@@ -1,0 +1,14 @@
+.main-page-card {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+
+	img {
+		margin-bottom: -4px;
+		max-width: 400px;
+		object-fit: fill;
+	}
+	.image-card {
+		border: 6px solid var(--colorPrimary-hover);
+	}
+}
